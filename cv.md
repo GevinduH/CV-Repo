@@ -27,3 +27,17 @@ great impact on the world.
 * Ability to work in time
 * Decision making
 * Communication
+
+## Education
+**G.C.E. Odinary Level, Ananda College, Sri Lanka. (2010-2020)**
+| Subject     | Result |
+| ----------- | ------ |
+| Sinhala     |    A   |
+| English     |    A   |
+| Mathematics |    A   |
+| Science     |    A   |
+| History     |    A   |
+| Accounts    |    A   |
+| Drama       |    A   |
+| IT          |    B   |
+| Buddhism    |    B   |
