@@ -19,5 +19,11 @@ internship opportunity where I can deepen
 my knowledge and skills while learning from
 seasoned professionals and contribute to
 innovative software solutions that have a
-great impact on the world.     
+great impact on the world.
 
+## Core Skills
+* Programming languages: Python, JavaScript, HTML, CSS, SQL
+* Teamwork
+* Ability to work in time
+* Decision making
+* Communication
