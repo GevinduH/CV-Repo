@@ -41,3 +41,8 @@ great impact on the world.
 | Drama       |    A   |
 | IT          |    B   |
 | Buddhism    |    B   |
+
+**G.C.E. Advanced Level, Ananda College, Sri Lanka. (2021-2024)**
+* Engineering technology - pending
+* Science for technology – pending
+* ICT – pending
