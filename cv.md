@@ -46,3 +46,6 @@ great impact on the world.
 * Engineering technology - pending
 * Science for technology – pending
 * ICT – pending
+
+## English Language Proficiency
+* Level : B2 Upper Intermediate (CEFR)
