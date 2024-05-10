@@ -1,1 +1,1 @@
-[https://GITHUB-GevinduH.github.io/ cv”/cv](cv.md)
+[https://gevinduh.github.io/CV-Repo/cv](cv.md)
