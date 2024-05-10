@@ -1,7 +1,7 @@
 # Gevindu Dinith Hapuarachchi
-### Intern Software Engineer
-----
-## Contact Information:     
+## Intern Software Engineer
+
+### Contact Information:     
 _Phone_: +94 77 410 1219     
 _E-mail_: wbjbzv5ddf@privaterelay.appleid.com     
 [LinkedIn](https://www.linkedin.com/in/gevindu-dinith-a97458306?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2Fhl7WFK5Rpm51IEClDlwMg%3D%3D)
