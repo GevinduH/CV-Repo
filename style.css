@@ -62,13 +62,13 @@ body{
     
 h2{
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     font-family: 'Merriweather';
     font-style: bold italic;
     font-weight: 700
 }
 h1{
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Oswald';
     font-style: bold;
     font-weight: 700
@@ -217,15 +217,22 @@ footer{
     background: whitesmoke;
     border: 4px solid black;
     padding: .5em;
-    box-shadow: grey 3em 3em 3em 3em;
+    box-shadow:grey 0 0 0 .5em;
 }
 
 img{
-    max-width:25rem;
-    max-height: 20rem;
+    max-width:18rem;
+    max-height: auto;
     border: 1px solid black;
     border-radius: 50%;
-    transition: .3s;   
+    transition: .4s ease-out;   
+}
+
+img:hover{
+    max-width:23rem;
+    max-height: 24rem;
+    border: 1px solid black;
+    
 }
 
 @media (max-width:991px){
@@ -332,13 +339,6 @@ img{
     .header:hover{
         border: 2px solid
     }
-}
-
-img:hover{
-    max-width:28rem;
-    max-height: 24rem;
-    border: 1px solid black;
-    
 }
     
 a:hover{
