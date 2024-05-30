@@ -1,6 +1,9 @@
 body{
     color:#212121 ;
     font-size: 1.2rem;
+    font-family:'lato',sans-serif;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .container{
@@ -48,9 +51,15 @@ body{
 h2{
     text-align: center;
     font-size: 2em;
+    font-family: 'Merriweather';
+    font-style: bold italic;
+    font-weight: 700
 }
 h1{
     font-size: 3em;
+    font-family: 'Oswald';
+    font-style: bold;
+    font-weight: 700
 }
 
 .Personal{
