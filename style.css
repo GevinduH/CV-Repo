@@ -1,5 +1,4 @@
 body{
-    background-color: #e4e2e0;
     color:#212121 ;
     font-size: 1.2rem;
 }
@@ -19,8 +18,6 @@ body{
     grid-template-rows: 65% 35%;
     transition: .25s;
     grid-gap: 5px;
-    
-    
 }
 
 .content.left{
@@ -40,6 +37,7 @@ body{
 }
 
 .header{
+    background-color: #e4e2e0;
     border: 1px solid black;
     grid-column-start: 1;
     grid-column-end: 2; 
@@ -55,11 +53,9 @@ h2{
 h1{
     font-size: 3em;
 }
-h3{
-    font-size: 1.5em;
-}
 
 .Personal{
+    background-color: #e4e2e0;
     text-align: justify;
     border: 1px solid black;
     padding: 0 1.25rem; 
@@ -77,14 +73,15 @@ p{
 }
 
 .Skills{
+    background-color: #e4e2e0;
     border: 1px solid black;
     grid-column-start: 2;
     grid-column-end: -1;
-    padding: 0 3em;
     transition: .3s;
 }
 
 .education{
+    background-color: #e4e2e0;
     padding: 0 2em;
     border: 1px solid black;
     grid-column-start: 2;
@@ -99,6 +96,7 @@ a{
 }
 
 .social{
+    background-color: #e4e2e0;
     padding: 0 1rem ;
     border: 1px solid black;
     font-size: 1em;
@@ -184,9 +182,7 @@ img{
     h1{
         font-size: 2.2em;
     }
-    h3{
-        font-size: .7em;
-    }
+   
     body{
         font-size: 1.2rem;
     }
@@ -199,16 +195,23 @@ img{
     }
 
     h2{
-        font-size: 1em;
+        font-size: 1.2em;
     }
     h1{
         font-size: 2em;
     }
-    h3{
-        font-size: .5em;
-    }
     body{
         font-size: 1rem;
+    }
+    .links{
+        font-size: 1rem;
+        border: 5px solid goldenrod;
+    }
+    .links:hover{
+        border: none;
+        box-shadow: none;
+        font-size: 1em;
+        padding: .6 .5em;
     }
 }
 
@@ -224,9 +227,7 @@ img{
     h1{
         font-size: 1.5em;
     }
-    h3{
-        font-size: .9em;
-    }
+
     body{
         font-size: .7rem;
     }
@@ -247,6 +248,15 @@ img{
         padding: .5em;;
     }
 
+    .links{
+        font-size: .7rem;
+    }
+
+    .links:hover{
+        font-size: .6rem;
+        padding: 6 .5em;
+    }
+
     .education:hover{
         padding: 0;
         border: 2px solid
@@ -265,8 +275,6 @@ img{
     .header:hover{
         border: 2px solid
     }
-
-
 }
 
 img:hover{
@@ -283,13 +291,13 @@ a:hover{
 
 .dp{
     padding-top: 5rem;
-    border: 5px soild goldenrod;
 }
 
 .links{
     height:fit-content;
     border: none;
     font-size: 1.5em;
+    border: 5px solid goldenrod;
 }
 
 .links:hover{
