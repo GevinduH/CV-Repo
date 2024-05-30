@@ -189,28 +189,28 @@ footer{
     background: whitesmoke;
     border: 4px solid black;
     padding:0 .5rem;
-    box-shadow: grey 3em 3em 3em 3em;
+    box-shadow: grey 0 0 0 .5em;
 }
 
 .Skills:hover{
     background: whitesmoke;
     border: 4px solid black;
     padding: 0 0 3rem 0;
-    box-shadow: grey 3em 3em 3em 3em;
+    box-shadow: grey 0 0 0 .5em;
 }
 
 .education:hover{
     background: whitesmoke;
     border: 4px solid black;
     padding: 0 1.5em;
-    box-shadow: grey 3em 3em 3em 3em;
+    box-shadow: grey 0 0 0 .5em;
 }
 
 .social:hover{
     background: whitesmoke;
     border: 4px solid black;
     padding: 6 .5em;
-    box-shadow: grey 3em 3em 3em 3em;
+    box-shadow: grey 0 0 0 .5em;
 }
 
 .header:hover{
