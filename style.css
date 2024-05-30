@@ -4,12 +4,13 @@ body{
     font-family:'lato',sans-serif;
     font-style: italic;
     font-weight: 400;
+    font-size: 1.5rem;
 }
 
 .container{
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 95% 5%;
+    grid-template-rows: 120% 15%;
     grid-gap: 1%;
     text-align: center;
 }
@@ -17,7 +18,6 @@ body{
 .content{
     display: grid;
     column-count:2;
-    grid-template-rows: 64% 35%;
     transition: .25s;
     grid-gap: 5px;
 }
@@ -25,6 +25,7 @@ body{
 .content.left{
     display: grid;
     grid-gap:1.5%;
+    grid-template-rows: 60.5% 38%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -33,11 +34,12 @@ body{
 
 .content.right{
     display: grid;
-    grid-template-rows: 26.5% 23.5%  49.5%;
+    grid-template-rows: 32.5% 23.5%  42.5%;
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: -2;
+    grid-gap: 0.725%;
 }
 
 .header{
@@ -78,7 +80,9 @@ h1{
     background-color: #e4e2e0;
     text-align: justify;
     border: 1px solid black;
-    padding: 0 1.25rem; 
+    padding: 0 2.5rem; 
+    line-height: 150%;
+    word-spacing: 115%;
     transition: .3s;
     border-radius:0 20% 0 0;
     position: relative;
@@ -188,7 +192,7 @@ footer{
 .Personal:hover{
     background: whitesmoke;
     border: 4px solid black;
-    padding:0 .5rem;
+    padding:1rem 2.5rem;
     box-shadow: grey 0 0 0 .5em;
 }
 
@@ -221,7 +225,7 @@ footer{
 }
 
 img{
-    max-width:18rem;
+    max-width:17rem;
     max-height: auto;
     border: 1px solid black;
     border-radius: 50%;
@@ -229,8 +233,8 @@ img{
 }
 
 img:hover{
-    max-width:23rem;
-    max-height: 24rem;
+    max-width:20rem;
+    max-height: auto;
     border: 1px solid black;
     
 }
@@ -239,6 +243,10 @@ img:hover{
     img{
         width: 65%;
         height: auto;
+    }
+    img:hover{
+        width: 75%;
+        max-height: auto;
     }
     h2{
         font-size: 1.2em;
@@ -249,6 +257,18 @@ img:hover{
    
     body{
         font-size: 1.2rem;
+    }
+    .Personal{
+        padding: 0 2rem; 
+        line-height: 150%;
+        word-spacing: 115%;
+        
+    }
+    .Personal:hover{
+        padding: .7rem 2rem; 
+        line-height: 150%;
+        word-spacing: 115%;
+        border: 2px solid;
     }
 }
 
@@ -276,6 +296,18 @@ img:hover{
         box-shadow: none;
         font-size: 1em;
         padding: .6 .5em;
+    }
+    .Personal{
+        padding: 0 2rem; 
+        line-height: 150%;
+        word-spacing: 115%;
+        
+    }
+    .Personal:hover{
+        padding: .5rem 2.3rem; 
+        line-height: 150%;
+        word-spacing: 115%;
+        border: 2px solid;
     }
 }
 
@@ -305,7 +337,9 @@ img:hover{
     }
 
     .Personal{
-        padding: 0;
+        padding: 0 2.5rem; 
+        line-height: 150%;
+        word-spacing: 115%;
     }
 
     .education{
@@ -327,7 +361,9 @@ img:hover{
     }
 
     .Personal:hover{
-        padding: 0;
+        padding: 0 2rem; 
+        line-height: 150%;
+        word-spacing: 115%;
         border: 2px solid;
     }
     .Skills:hover{
@@ -347,7 +383,7 @@ a:hover{
 }
 
 .dp{
-    padding-top: 3.5rem;
+    padding-top: 2.85rem;
 }
 
 .links{
