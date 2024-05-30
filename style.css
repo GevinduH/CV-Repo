@@ -7,25 +7,36 @@ body{
 .container{
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 15fr 1fr;
-    grid-gap: 5px;
+    grid-template-rows: 95% 5%;
+    grid-gap: 1%;
     text-align: center;
     
 }
 
-/*container{
-    display: flex;
-    flex-direction: column;
-} */
-
 .content{
     display: grid;
     column-count:2;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 65% 35%;
     transition: .25s;
     grid-gap: 5px;
-
     
+    
+}
+
+.content.left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.content.right{
+    display: grid;
+    grid-template-rows: 30% 20%  49.5%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -2;
 }
 
 .header{
@@ -33,7 +44,8 @@ body{
     grid-column-start: 1;
     grid-column-end: 2; 
     transition: .3s;   
-
+    border-radius: 20% 0 0 0;
+    overflow: hidden;
 }
     
 h2{
@@ -50,12 +62,14 @@ h3{
 .Personal{
     text-align: justify;
     border: 1px solid black;
-    padding:1.25rem; 
+    padding: 0 1.25rem; 
     transition: .3s;
+    border-radius:0 20% 0 0;
 }
 
 ul{
     text-align: left;
+    padding: 0 3em;
 }
 
 p{
@@ -76,6 +90,7 @@ p{
     grid-column-start: 2;
     grid-column-end: -1;
     transition: .3s;
+    border-radius:0 0 20% 0;
 }
 a{
     text-decoration: none; 
@@ -90,6 +105,7 @@ a{
     line-height: 2em;
     grid-column-start: 1;
     grid-column-end: 2;
+    border-radius:0 0 0 20% ;
     transition: .3s;
     
 }
@@ -100,17 +116,17 @@ a{
 
 .footer{
     width: 100%;
-    border:1px solid black;
     grid-column-start: 1;
     grid-column-end: -1;
+    height: 5rem;
 
 }
 footer{
     
     margin: 5px 0;
     text-align: center;
-    padding-top: 1.5em;
-    height: 2rem;
+    padding-top: 1.25em;
+    
 }
 
 .Personal:hover{
@@ -123,21 +139,21 @@ footer{
 .Skills:hover{
     background: whitesmoke;
     border: 4px solid black;
-    padding: .5em;
+    padding: 0 1.5em;
     box-shadow: grey 3em 3em 3em 3em;
 }
 
 .education:hover{
     background: whitesmoke;
     border: 4px solid black;
-    padding: .5em;
+    padding: 0 1.5em;
     box-shadow: grey 3em 3em 3em 3em;
 }
 
 .social:hover{
     background: whitesmoke;
     border: 4px solid black;
-    padding: .5em;
+    padding: 6 .5em;
     box-shadow: grey 3em 3em 3em 3em;
 }
 
@@ -146,20 +162,6 @@ footer{
     border: 4px solid black;
     padding: .5em;
     box-shadow: grey 3em 3em 3em 3em;
-}
-
-.content.left{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.content.right{
-    grid-column-start: 2;
-    grid-column-end: -1;
-    grid-row-start: 1;
-    grid-row-end: -2;
 }
 
 img{
@@ -281,4 +283,17 @@ a:hover{
 
 .dp{
     padding-top: 5rem;
+    border: 5px soild goldenrod;
+}
+
+.links{
+    height:fit-content;
+    border: none;
+    font-size: 1.5em;
+}
+
+.links:hover{
+    border: none;
+    box-shadow: none;
+    font-size: 1.7em;
 }
