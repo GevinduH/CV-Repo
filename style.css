@@ -9,7 +9,6 @@ body{
     grid-template-rows: 95% 5%;
     grid-gap: 1%;
     text-align: center;
-    
 }
 
 .content{
@@ -29,7 +28,7 @@ body{
 
 .content.right{
     display: grid;
-    grid-template-rows: 30% 20%  49.5%;
+    grid-template-rows: 26.5% 23.5%  49.5%;
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 1;
@@ -130,14 +129,14 @@ footer{
 .Personal:hover{
     background: whitesmoke;
     border: 4px solid black;
-    padding: 1em;
+    padding:0 1rem;
     box-shadow: grey 3em 3em 3em 3em;
 }
 
 .Skills:hover{
     background: whitesmoke;
     border: 4px solid black;
-    padding: 0 1.5em;
+    padding: 0 0 3rem 0;
     box-shadow: grey 3em 3em 3em 3em;
 }
 
@@ -290,7 +289,7 @@ a:hover{
 }
 
 .dp{
-    padding-top: 5rem;
+    padding-top: 3.5rem;
 }
 
 .links{
