@@ -17,12 +17,14 @@ body{
 .content{
     display: grid;
     column-count:2;
-    grid-template-rows: 65% 35%;
+    grid-template-rows: 64% 35%;
     transition: .25s;
     grid-gap: 5px;
 }
 
 .content.left{
+    display: grid;
+    grid-gap:1.5%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -46,6 +48,16 @@ body{
     transition: .3s;   
     border-radius: 20% 0 0 0;
     overflow: hidden;
+    position: relative;
+    animation: header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes header{
+    0%{opacity: 0; left:-30rem;}
+    100%{opacity: 1; left:0;}
 }
     
 h2{
@@ -69,15 +81,22 @@ h1{
     padding: 0 1.25rem; 
     transition: .3s;
     border-radius:0 20% 0 0;
+    position: relative;
+    animation: Personal;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes Personal{
+    0%{opacity: 0; right:-30rem;}
+    100%{opacity: 1; right:0;}
 }
 
 ul{
     text-align: left;
     padding: 0 3em;
-}
-
-p{
-    padding: 1.5rem;
 }
 
 .Skills{
@@ -86,6 +105,17 @@ p{
     grid-column-start: 2;
     grid-column-end: -1;
     transition: .3s;
+    position: relative;
+    animation: Skills;
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes Skills{
+    0%{opacity: 0; right:-30rem;}
+    100%{opacity: 1; right:0;}
 }
 
 .education{
@@ -96,7 +126,19 @@ p{
     grid-column-end: -1;
     transition: .3s;
     border-radius:0 0 20% 0;
+    position: relative;
+    animation: education;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
+
+@keyframes education{
+    0%{opacity: 0; right:-30rem;}
+    100%{opacity: 1; right:0;}
+}
+
 a{
     text-decoration: none; 
     color: lightseagreen;
@@ -113,7 +155,17 @@ a{
     grid-column-end: 2;
     border-radius:0 0 0 20% ;
     transition: .3s;
-    
+    position: relative;
+    animation: social;
+    animation-delay: 2.5s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes social{
+    0%{opacity: 0; left:-30rem;}
+    100%{opacity: 1; left:0;}
 }
 
 .social h3{
@@ -128,17 +180,15 @@ a{
 
 }
 footer{
-    
     margin: 5px 0;
     text-align: center;
-    padding-top: 1.25em;
-    
+    padding-top: 1.25em; 
 }
 
 .Personal:hover{
     background: whitesmoke;
     border: 4px solid black;
-    padding:0 1rem;
+    padding:0 .5rem;
     box-shadow: grey 3em 3em 3em 3em;
 }
 
@@ -175,8 +225,7 @@ img{
     max-height: 20rem;
     border: 1px solid black;
     border-radius: 50%;
-    transition: .3s;
-    
+    transition: .3s;   
 }
 
 @media (max-width:991px){
