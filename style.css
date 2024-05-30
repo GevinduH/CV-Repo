@@ -1,0 +1,152 @@
+body{
+    background-color: #e4e2e0;
+    color:#212121 ;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 15fr 1fr;
+    grid-gap: 5px;
+    text-align: center;
+    
+}
+
+/*container{
+    display: flex;
+    flex-direction: column;
+} */
+
+.content{
+    display: grid;
+    column-count:2;
+    grid-template-rows: 3fr 1fr;
+    transition: .25s;
+    grid-gap: 5px;
+
+    
+}
+
+.header{
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: 2;    
+
+}
+    
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+h1{
+    font-size: 3em;
+}
+h3{
+    font-size: 1.5em;
+}
+
+.Personal{
+    text-align: justify;
+    border: 1px solid black;
+    padding:1.25rem; 
+}
+
+ul{
+    text-align: left;
+}
+
+p{
+    padding: 1.5rem;
+}
+
+.Skills{
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    padding: 0 3em;
+
+}
+
+.education{
+    padding: 0 2em;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+a{
+    text-decoration: none; 
+    color: lightseagreen;   
+}
+
+.social{
+    padding: 0 1rem ;
+    border: 1px solid black;
+    font-size: 1em;
+    line-height: 2em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+
+.social h3{
+    text-align: left;
+}
+
+.footer{
+    width: 100%;
+    border:1px solid black;
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+}
+footer{
+    
+    margin: 5px 0;
+    text-align: center;
+    padding-top: 1em;
+    height: 2rem;
+}
+
+.Personal:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding: .5em;
+}
+
+.Skills:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding: .5em;
+}
+
+.education:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding: .5em;
+}
+
+.social:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding: .5em;
+}
+
+.header:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding: .5em;
+}
+
+.content.left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.content.right{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -2;
+}
