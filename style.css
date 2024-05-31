@@ -144,7 +144,10 @@ ul{
 }
 
 a{
-    text-decoration: none; 
+    text-decoration: none;
+}
+
+.links{ 
     color: #0762C8;
     transition: .5s;   
 }
@@ -303,10 +306,7 @@ img:hover{
     body{
         font-size: 1rem;
     }
-    .links{
-        font-size: 1rem;
-        border: 5px solid goldenrod;
-    }
+
     .links:hover{
         border: none;
         box-shadow: none;
@@ -393,7 +393,7 @@ img:hover{
     }
 }
     
-a:hover{
+.links:hover{
     font-size: 1.5em;
     color: lightcoral;
 }
