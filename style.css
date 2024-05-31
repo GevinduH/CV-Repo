@@ -375,7 +375,7 @@ img:hover{
     }
 
     .Personal{
-        padding: 0 2.5rem; 
+        padding: 0 2rem; 
         line-height: 150%;
         word-spacing: 115%;
     }
@@ -399,7 +399,7 @@ img:hover{
     }
 
     .Personal:hover{
-        padding: 0 2rem; 
+        padding: 0 2.1rem; 
         line-height: 150%;
         word-spacing: 115%;
         border: 2px solid;
