@@ -405,7 +405,7 @@ img:hover{
 
     .content__education:hover{
         padding: 0;
-        border: 2px solid;
+        border: 2px solid black;
     }
 
     .content__personal:hover{
@@ -413,13 +413,13 @@ img:hover{
         border: 2px solid black;
     }
     .content__skills:hover{
-        border: 2px solid;
+        border: 2px solid black;
     }
     .content__social:hover{
-        border: 2px solid;
+        border: 2px solid black;
     }
     .content__header:hover{
-        border: 2px solid;
+        border: 2px solid black;
     }
     .mailtxt:hover {
         font-size: .75em;
