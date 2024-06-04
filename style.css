@@ -405,21 +405,21 @@ img:hover{
 
     .content__education:hover{
         padding: 0;
-        border: 2px solid
+        border: 2px solid;
     }
 
     .content__personal:hover{
         padding: 0 2.1rem; 
-        border: 2px solid;
+        border: 2px solid black;
     }
     .content__skills:hover{
-        border: 2px solid
+        border: 2px solid;
     }
     .content__social:hover{
-        border: 2px solid
+        border: 2px solid;
     }
     .content__header:hover{
-        border: 2px solid
+        border: 2px solid;
     }
     .mailtxt:hover {
         font-size: .75em;
