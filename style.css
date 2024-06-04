@@ -3,7 +3,6 @@ body{
     font-family:'lato',sans-serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 62.5%;
     text-align: center;
 }
 
@@ -31,6 +30,7 @@ body{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    
 }
 
 .content .content--right{
@@ -163,10 +163,6 @@ a{
     color: black;
 }
 
-.content__social h3{
-    text-align: left;
-}
-
 a:hover{
     font-size: 1.5em;
 }
@@ -183,7 +179,7 @@ a:hover{
 }
 
 .fa-linkedin:hover{
-    color: lightcoral;
+    color: #850000;
 }
 
 
@@ -194,17 +190,18 @@ a:hover{
 }
 
 .fa-envelope:hover{
-    color: lightcoral;
+    color: #850000;
 }
 
 .fa-square-phone{
     font-size: 2.5em;
     transition: .5s;
     color: #0762C8; 
+    border: none;
 }
 
 .fa-square-phone:hover{
-    color: lightcoral;
+    color: #850000;
 }
 
 .content__personal:hover{
@@ -295,11 +292,11 @@ img:hover{
         font-size: 1.6em;
     }
     h1{
-        font-size: 2.2em;
+        font-size: 2.1em;
     }
-   
-    body{
-        font-size: 1.2rem;
+
+    .content__social{
+        padding: 0 .1rem;
     }
     .content__personal{
         padding: 0 2rem; 
@@ -321,13 +318,14 @@ img:hover{
     }
 
     h2{
-        font-size: 1.6em;
+        font-size: 1.6rem;
     }
     h1{
-        font-size: 2.1em;
+        font-size: 2.1rem;
     }
-    body{
-        font-size: 1.4rem;
+
+    .content__social{
+        padding: 0 1rem;
     }
 
     .links:hover{
@@ -352,44 +350,55 @@ img:hover{
 
 @media (max-width:600px){
     img{
-        width: 55%;
+        width: 65%;
         height: auto;
     }
-
+    p{
+        font-size: 1.4rem;
+    }
     h2{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     h1{
-        font-size: 2.1rem;
-    }
-
-    body{
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .header header-picture{
         padding-top: 1rem;
     }
 
+   .container{
+    display: flex;
+    flex-flow:column;
+   }
+
     .content__skills{
         padding: 0 1em;
     }
 
+    .content__header{
+        border-radius: 20% 20% 0 0;
+    }
+
     .content__personal{
-        padding: 0 2rem; 
-        line-height: 150%;
-        word-spacing: 115%;
+        padding-right: 1rem; 
+        border-radius: 0;
     }
 
     .content__education{
-        padding: .5em;;
+        padding: .5em;
+        border-radius: 0 0 20% 20%;
     }
 
-    .content__social .links{
+    .content__social{
+        border-radius: 0;
+    }
+
+    .links{
         font-size: .7rem;
     }
 
-    .content__social .links:hover{
+    .links:hover{
         font-size: .7rem;
         padding: 6 .5em;
     }
@@ -401,8 +410,6 @@ img:hover{
 
     .content__personal:hover{
         padding: 0 2.1rem; 
-        line-height: 150%;
-        word-spacing: 115%;
         border: 2px solid;
     }
     .content__skills:hover{
