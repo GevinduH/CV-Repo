@@ -1,10 +1,10 @@
 body{
     color:#212121;
-    font-size: 1.2rem;
     font-family:'lato',sans-serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 62.5%;
+    text-align: center;
 }
 
 .container{
@@ -12,7 +12,8 @@ body{
     grid-template-columns: 40% 60%;
     grid-template-rows: 120% 15%;
     grid-gap: 1%;
-    text-align: center;
+    font-size: 1.6rem;
+    
 }
 
 .content{
@@ -22,7 +23,7 @@ body{
     grid-gap: 5px;
 }
 
-.content.left{
+.content .content--left{
     display: grid;
     grid-gap:1.5%;
     grid-template-rows: 60.5% 38%;
@@ -32,7 +33,7 @@ body{
     grid-row-end: 2;
 }
 
-.content.right{
+.content .content--right{
     display: grid;
     grid-template-rows: 32.5% 23.5%  42.5%;
     grid-column-start: 2;
@@ -42,11 +43,12 @@ body{
     grid-gap: 0.725%;
 }
 
-.header{
+.content__header{
     background-color: #e4e2e0;
     border: 1px solid black;
     grid-column-start: 1;
     grid-column-end: 2; 
+    padding: 2.85rem;
     transition: .3s;   
     border-radius: 20% 0 0 0;
     overflow: hidden;
@@ -57,38 +59,38 @@ body{
     opacity: 0;
 }
 
-.Personal{
+.content__personal{
     background-color: #e4e2e0;
     text-align: justify;
     border: 1px solid black;
-    padding: 0 2.5rem; 
+    padding: .5rem 2rem; 
     line-height: 150%;
-    word-spacing: 115%;
+    word-spacing: .1rem;
     transition: .3s;
     border-radius:0 20% 0 0;
     position: relative;
-    animation: Personal;
+    animation: personal;
     animation-delay: 1s;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
-.Skills{
+.content__skills{
     background-color: #e4e2e0;
     border: 1px solid black;
     grid-column-start: 2;
     grid-column-end: -1;
     transition: .3s;
     position: relative;
-    animation: Skills;
+    animation: skills;
     animation-delay: 1.5s;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
-.education{
+.content__education{
     background-color: #e4e2e0;
     padding: 0 2em;
     border: 1px solid black;
@@ -104,7 +106,7 @@ body{
     opacity: 0;
 }
 
-.social{
+.content__social{
     background-color: #e4e2e0;
     padding: 0 1rem ;
     border: 1px solid black;
@@ -125,11 +127,10 @@ body{
 tr,td,th, table {
     border: 1px solid black;
     border-collapse: collapse;
-  }
+}
 
 footer{
     margin: 5px 0;
-    text-align: center;
     padding-top: 1.25em; 
     width: 100%;
     grid-column-start: 1;
@@ -137,19 +138,15 @@ footer{
     height: 5rem;
 }
 
-.picture{
-    padding-top: 2.85rem;
-}
-
 h2{
     text-align: center;
-    font-size: 1.7em;
+    font-size: 3rem;
     font-family: 'Merriweather';
     font-style: bold italic;
     font-weight: 700
 }
 h1{
-    font-size: 2.5em;
+    font-size: 3.5rem;
     font-family: 'Oswald';
     font-style: bold;
     font-weight: 700
@@ -166,7 +163,7 @@ a{
     color: black;
 }
 
-.social h3{
+.content__social h3{
     text-align: left;
 }
 
@@ -210,41 +207,40 @@ a:hover{
     color: lightcoral;
 }
 
-.Personal:hover{
+.content__personal:hover{
     background: whitesmoke;
     border: 4px solid black;
     padding:1rem 2.5rem;
     box-shadow: grey 0 0 0 .5em;
 }
 
-.Skills:hover{
+.content__skills:hover{
     background: whitesmoke;
     border: 4px solid black;
     padding: 0 0 3rem 0;
     box-shadow: grey 0 0 0 .5em;
 }
 
-.education:hover{
+.content__education:hover{
     background: whitesmoke;
     border: 4px solid black;
     padding: 0 1.5em;
     box-shadow: grey 0 0 0 .5em;
 }
 
-.social:hover{
+.content__social:hover{
     background: whitesmoke;
     border: 4px solid black;
     padding: 6 .5em;
     box-shadow: grey 0 0 0 .5em;
 }
 
-.header:hover{
+.content__header:hover{
     background: whitesmoke;
     border: 4px solid black;
-    padding: .5em;
+    padding: 2.9rem;
     box-shadow:grey 0 0 0 .5em;
 }
-
 
 img{
     max-width:17rem;
@@ -265,12 +261,12 @@ img:hover{
     100%{opacity: 1; left:0;}
 }
     
-@keyframes Personal{
+@keyframes personal{
     0%{opacity: 0; right:-30rem;}
     100%{opacity: 1; right:0;}
 }
 
-@keyframes Skills{
+@keyframes skills{
     0%{opacity: 0; right:-30rem;}
     100%{opacity: 1; right:0;}
 }
@@ -296,7 +292,7 @@ img:hover{
         max-height: auto;
     }
     h2{
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
     h1{
         font-size: 2.2em;
@@ -305,13 +301,12 @@ img:hover{
     body{
         font-size: 1.2rem;
     }
-    .Personal{
+    .content__personal{
         padding: 0 2rem; 
         line-height: 150%;
-        word-spacing: 1.15rem;
         
     }
-    .Personal:hover{
+    .content__personal:hover{
         padding: .7rem 2rem; 
         line-height: 150%;
         word-spacing: 115%;
@@ -326,13 +321,13 @@ img:hover{
     }
 
     h2{
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
     h1{
-        font-size: 2em;
+        font-size: 2.1em;
     }
     body{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .links:hover{
@@ -341,16 +336,16 @@ img:hover{
         font-size: 1em;
         padding: .6 .5em;
     }
-    .Personal{
+    .content__personal{
         padding: 0 2rem; 
-        line-height: 150%;
-        word-spacing: 115%;
+        line-height: 2rem;
+
         
     }
-    .Personal:hover{
-        padding: .5rem 2.3rem; 
-        line-height: 150%;
-        word-spacing: 115%;
+    .content__personal:hover{
+        padding: .5rem 1rem; 
+        line-height: 2rem;
+        word-spacing: 1rem;
         border: 2px solid;
     }
 }
@@ -362,61 +357,61 @@ img:hover{
     }
 
     h2{
-        font-size: 1em;
+        font-size: 1.8rem;
     }
     h1{
-        font-size: 1.5em;
+        font-size: 2.1rem;
     }
 
     body{
-        font-size: .7rem;
+        font-size: 1.6rem;
     }
 
-    .dp{
+    .header header-picture{
         padding-top: 1rem;
     }
 
-    .Skills{
+    .content__skills{
         padding: 0 1em;
     }
 
-    .Personal{
+    .content__personal{
         padding: 0 2rem; 
         line-height: 150%;
         word-spacing: 115%;
     }
 
-    .education{
+    .content__education{
         padding: .5em;;
     }
 
-    .links{
+    .content__social .links{
         font-size: .7rem;
     }
 
-    .links:hover{
+    .content__social .links:hover{
         font-size: .7rem;
         padding: 6 .5em;
     }
 
-    .education:hover{
+    .content__education:hover{
         padding: 0;
         border: 2px solid
     }
 
-    .Personal:hover{
+    .content__personal:hover{
         padding: 0 2.1rem; 
         line-height: 150%;
         word-spacing: 115%;
         border: 2px solid;
     }
-    .Skills:hover{
+    .content__skills:hover{
         border: 2px solid
     }
-    .social:hover{
+    .content__social:hover{
         border: 2px solid
     }
-    .header:hover{
+    .content__header:hover{
         border: 2px solid
     }
     .mailtxt:hover {
