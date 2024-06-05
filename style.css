@@ -1,0 +1,441 @@
+body{
+    color:#212121;
+    font-family:'lato',sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+
+tr,td,th, table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+footer{
+    margin: 5px 0;
+    padding-top: 1.25em; 
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 5rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Merriweather';
+    font-style: bold italic;
+    font-weight: 700
+}
+h1{
+    font-size: 3.5rem;
+    font-family: 'Oswald';
+    font-style: bold;
+    font-weight: 700
+}
+
+ul{
+    text-align: left;
+    padding: 0 3em;
+}
+
+a{
+    text-decoration: none;
+    transition: .5s; 
+    color: black;
+}
+
+img{
+    max-width:17rem;
+    max-height: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: .4s ease-out;   
+}
+
+img:hover{
+    max-width:20rem;
+    max-height: auto;
+    border: 1px solid black;
+}
+
+a:hover{
+    font-size: 1.5em;
+}
+
+.visually-hidden{
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 120% 15%;
+    grid-gap: 1%;
+    font-size: 1.6rem;
+    
+}
+
+.content{
+    display: grid;
+    column-count:2;
+    transition: .25s;
+    grid-gap: 5px;
+}
+
+.content .content--left{
+    display: grid;
+    grid-gap:1.5%;
+    grid-template-rows: 60.5% 38%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.content .content--right{
+    display: grid;
+    grid-template-rows: 32.5% 23.5%  42.5%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -2;
+    grid-gap: 0.725%;
+}
+
+.content__header{
+    background-color: #e4e2e0;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    padding: 2.85rem;
+    transition: .3s;   
+    border-radius: 20% 0 0 0;
+    overflow: hidden;
+    position: relative;
+    animation: header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.content__personal{
+    background-color: #e4e2e0;
+    text-align: justify;
+    border: 1px solid black;
+    padding: .5rem 2rem; 
+    line-height: 150%;
+    word-spacing: .1rem;
+    transition: .3s;
+    border-radius:0 20% 0 0;
+    position: relative;
+    animation: personal;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.content__skills{
+    background-color: #e4e2e0;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    transition: .3s;
+    position: relative;
+    animation: skills;
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.content__education{
+    background-color: #e4e2e0;
+    padding: 0 2em;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    transition: .3s;
+    border-radius:0 0 20% 0;
+    position: relative;
+    animation: education;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.content__social{
+    background-color: #e4e2e0;
+    padding: 0 1rem ;
+    border: 1px solid black;
+    font-size: 1em;
+    line-height: 2em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius:0 0 0 20% ;
+    transition: .3s;
+    position: relative;
+    animation: social;
+    animation-delay: 2.5s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.fa-github{
+    font-size: 2.5em;
+    color: #24292e;
+}
+
+.fa-linkedin{
+    font-size: 2.5em;
+    transition: .5s; 
+    color: #0762C8;
+}
+
+.fa-linkedin:hover{
+    color: #850000;
+}
+
+
+.fa-envelope{
+    font-size: 2em;
+    transition: .5s; 
+    color: #0762C8;
+}
+
+.fa-envelope:hover{
+    color: #850000;
+}
+
+.fa-square-phone{
+    font-size: 2.5em;
+    transition: .5s;
+    color: #0762C8; 
+    border: none;
+}
+
+.fa-square-phone:hover{
+    color: #850000;
+}
+
+.content__personal:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding:1rem 2.5rem;
+    box-shadow: grey 0 0 0 .5em;
+}
+
+.content__skills:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding: 0 0 3rem 0;
+    box-shadow: grey 0 0 0 .5em;
+}
+
+.content__education:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding: 0 1.5em;
+    box-shadow: grey 0 0 0 .5em;
+}
+
+.content__social:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding: 6 .5em;
+    box-shadow: grey 0 0 0 .5em;
+}
+
+.content__header:hover{
+    background: whitesmoke;
+    border: 4px solid black;
+    padding: 2.9rem;
+    box-shadow:grey 0 0 0 .5em;
+}
+
+@keyframes header{
+    0%{opacity: 0; left:-30rem;}
+    100%{opacity: 1; left:0;}
+}
+    
+@keyframes personal{
+    0%{opacity: 0; right:-30rem;}
+    100%{opacity: 1; right:0;}
+}
+
+@keyframes skills{
+    0%{opacity: 0; right:-30rem;}
+    100%{opacity: 1; right:0;}
+}
+
+@keyframes education{
+    0%{opacity: 0; right:-30rem;}
+    100%{opacity: 1; right:0;}
+}
+
+
+@keyframes social{
+    0%{opacity: 0; left:-30rem;}
+    100%{opacity: 1; left:0;}
+}
+
+@media (max-width:991px){
+    img{
+        width: 65%;
+        height: auto;
+    }
+    img:hover{
+        width: 75%;
+        max-height: auto;
+    }
+    h2{
+        font-size: 1.6em;
+    }
+    h1{
+        font-size: 2.1em;
+    }
+
+    .content__social{
+        padding: 0 .1rem;
+    }
+    .content__personal{
+        padding: 0 2rem; 
+        line-height: 150%;
+        
+    }
+    .content__personal:hover{
+        padding: .7rem 2rem; 
+        line-height: 150%;
+        word-spacing: 115%;
+        border: 2px solid;
+    }
+}
+
+@media (max-width:758px){
+    img{
+        width: 65%;
+        height: auto;
+    }
+
+    h2{
+        font-size: 1.6rem;
+    }
+    h1{
+        font-size: 2.1rem;
+    }
+
+    .content__social{
+        padding: 0 1rem;
+    }
+
+    .links:hover{
+        border: none;
+        box-shadow: none;
+        font-size: 1em;
+        padding: .6 .5em;
+    }
+    .content__personal{
+        padding: 0 2rem; 
+        line-height: 2rem;
+
+        
+    }
+    .content__personal:hover{
+        padding: .5rem 1rem; 
+        line-height: 2rem;
+        word-spacing: 1rem;
+        border: 2px solid;
+    }
+}
+
+@media (max-width:600px){
+    img{
+        width: 65%;
+        height: auto;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+
+    .header header-picture{
+        padding-top: 1rem;
+    }
+
+   .container{
+        display: flex;
+        flex-flow:column;
+   }
+
+    .content__skills{
+        padding: 0 1em;
+    }
+
+    .content__header{
+        border-radius: 20% 20% 0 0;
+    }
+
+    .content__personal{
+        padding-right: 1rem; 
+        border-radius: 0;
+    }
+
+    .content__education{
+        padding: .5em;
+        border-radius: 0 0 20% 20%;
+    }
+
+    .content__social{
+        border-radius: 0;
+    }
+
+    .links{
+        font-size: .7rem;
+    }
+
+    .links:hover{
+        font-size: .7rem;
+        padding: 6 .5em;
+    }
+
+    .content__education:hover{
+        padding: 0;
+        border: 2px solid black;
+    }
+
+    .content__personal:hover{
+        padding: 0 2.1rem; 
+        border: 2px solid black;
+    }
+    .content__skills:hover{
+        border: 2px solid black;
+    }
+    .content__social:hover{
+        border: 2px solid black;
+    }
+    .content__header:hover{
+        border: 2px solid black;
+    }
+    .mailtxt:hover {
+        font-size: .75em;
+    }
+}
