@@ -6,6 +6,63 @@ body{
     text-align: center;
 }
 
+tr,td,th, table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+footer{
+    margin: 5px 0;
+    padding-top: 1.25em; 
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 5rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Merriweather';
+    font-style: bold italic;
+    font-weight: 700
+}
+h1{
+    font-size: 3.5rem;
+    font-family: 'Oswald';
+    font-style: bold;
+    font-weight: 700
+}
+
+ul{
+    text-align: left;
+    padding: 0 3em;
+}
+
+a{
+    text-decoration: none;
+    transition: .5s; 
+    color: black;
+}
+
+img{
+    max-width:17rem;
+    max-height: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: .4s ease-out;   
+}
+
+img:hover{
+    max-width:20rem;
+    max-height: auto;
+    border: 1px solid black;
+}
+
+a:hover{
+    font-size: 1.5em;
+}
+
 .container{
     display: grid;
     grid-template-columns: 40% 60%;
@@ -124,49 +181,6 @@ body{
     opacity: 0;
 }
 
-tr,td,th, table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-footer{
-    margin: 5px 0;
-    padding-top: 1.25em; 
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    height: 5rem;
-}
-
-h2{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Merriweather';
-    font-style: bold italic;
-    font-weight: 700
-}
-h1{
-    font-size: 3.5rem;
-    font-family: 'Oswald';
-    font-style: bold;
-    font-weight: 700
-}
-
-ul{
-    text-align: left;
-    padding: 0 3em;
-}
-
-a{
-    text-decoration: none;
-    transition: .5s; 
-    color: black;
-}
-
-a:hover{
-    font-size: 1.5em;
-}
-
 .fa-github{
     font-size: 2.5em;
     color: #24292e;
@@ -237,20 +251,6 @@ a:hover{
     border: 4px solid black;
     padding: 2.9rem;
     box-shadow:grey 0 0 0 .5em;
-}
-
-img{
-    max-width:17rem;
-    max-height: auto;
-    border: 1px solid black;
-    border-radius: 50%;
-    transition: .4s ease-out;   
-}
-
-img:hover{
-    max-width:20rem;
-    max-height: auto;
-    border: 1px solid black;
 }
 
 @keyframes header{
